@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #333;
     background-color: #FCF5E3;
   }
@@ -40,9 +40,80 @@
     color: #FFC907 !important;
   }
 
+  .navbar a:focus {
+    color: #FFC907 !important;
+  }
+
   .navbar img {
     height: 30px;
     padding-left: 25px;
+  }
+
+  .navbar .dropdown-menu {
+    background-color: #1A1A1A;
+  }
+
+  .navbar .dropdown-toggle:focus {
+    color: #FFC907 !important;
+  }
+
+  .navbar .dropdown-toggle:visited {
+    color: white;
+  }
+
+  .navbar .dropdown-toggle:active {
+    color: #FFC907 !important;
+  }
+
+  .navbar .dropdown-menu a {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .navbar .dropdown-menu a:hover {
+    color: #BAE3F0;
+  }
+
+  .navbar .dropdown-item {
+    padding: 15px 10px;
+  }
+
+  .navbar .dropdown-item:hover {
+    background-color: #1A1A1A;
+  }
+
+  .navbar button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    background-color: #FFC907;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .navbar button:hover {
+    background-color: #EAB700;
+    transition: 0.2s ease-in-out;
+  }
+
+  .navbar button a {
+    color: #1A1A1A;
+  }
+
+  .navbar button a:hover {
+    color: #1A1A1A;
+  }
+
+  .navbar button a:active {
+    color: #1A1A1A;
+  }
+
+  .navbar button a:focus {
+    color: #1A1A1A;
+  }
+
+  .navbar button a:visited {
+    color: #1A1A1A !important;
   }
   
   /* Hero Section */
@@ -60,7 +131,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* soft dark overlay */
+    background: rgba(0, 0, 0, 0.444); /* soft dark overlay */
     z-index: 1;
   }
   
@@ -83,7 +154,7 @@
   
   .hero-content h1 span {
     color: #BAE3F0; /* light aqua for 'Big Impact' */
-    font-style: normal;
+    font-style: italic;
   }
   
   .hero-content .subheading {
@@ -110,11 +181,12 @@
     border-radius: 8px;
     font-size: 1rem;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: 0.2s ease-in-out;
   }
   
   .cta-button:hover {
-    background-color: #BAE3F0;
+    background-color: #EAB700;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
   }
   
