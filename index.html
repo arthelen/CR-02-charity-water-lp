@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/jerry_can_yellow.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity: Water – Monthly Giving</title>
-  <!-- nunito sans google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="img/jerry_can_yellow.png" type="image/png" />
+
+  <!-- Google Fonts: Nunito Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+
+  <!-- 🌐 NAVBAR -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/white-charity-logo.png" alt="White charity: water text logo with a yellow jerry jug icon to the left."></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  take action
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/donate/the-spring" target="_blank">give monthly</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/fundraise" target="_blank">fundraise for clean water</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/donate/water-project-sponsorship" target="_blank">become a water project sponsor</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/brand-partnerships" target="_blank">become a brand partner</a></li>
-                  <li><a class="dropdown-item" href="https://plannedgiving.charitywater.org/" target="_blank">plan legacy giving</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/experience" target="_blank">visit the experience lab</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  about us
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/our-approach/100-percent-model" target="_blank">the 100% model</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/our-work" target="_blank">our work</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/how-we-work" target="_blank">how we work</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/about/scott-harrison-story" target="_blank">meet the founnder</a></li>
-                  <li><a class="dropdown-item" href="https://www.charitywater.org/about/financials" target="_blank">see our financials</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.charitywater.org/global-water-crisis" target="_blank">why water?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.charitywater.org/account/login" target="_blank">sign in</a>
-              </li>
-              <li class="nav-item">
-                <button><a class="nav-link" href="https://www.charitywater.org/donate" target="_blank">GIVE 💧</a></button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/white-charity-logo.png" alt="Charity: Water logo with yellow jerry can" />
+        </a>
 
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!-- Take Action Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                take action
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.charitywater.org/donate/the-spring" target="_blank">give monthly</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/fundraise" target="_blank">fundraise for clean water</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/donate/water-project-sponsorship" target="_blank">become a water project sponsor</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/brand-partnerships" target="_blank">become a brand partner</a></li>
+                <li><a class="dropdown-item" href="https://plannedgiving.charitywater.org/" target="_blank">plan legacy giving</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/experience" target="_blank">visit the experience lab</a></li>
+              </ul>
+            </li>
+
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                about us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.charitywater.org/our-approach/100-percent-model" target="_blank">the 100% model</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/our-work" target="_blank">our work</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/how-we-work" target="_blank">how we work</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/about/scott-harrison-story" target="_blank">meet the founder</a></li>
+                <li><a class="dropdown-item" href="https://www.charitywater.org/about/financials" target="_blank">see our financials</a></li>
+              </ul>
+            </li>
+
+            <!-- Static Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.charitywater.org/global-water-crisis" target="_blank">why water?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.charitywater.org/account/login" target="_blank">sign in</a>
+            </li>
+
+            <!-- GIVE Button -->
+            <li class="nav-item">
+              <button>
+                <a class="nav-link" href="https://www.charitywater.org/donate" target="_blank">GIVE 💧</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 🌄 HERO SECTION -->
     <div class="hero">
-    <div class="hero-content">
-      <h1>Small Donation.<br><span>Big Impact.</span><br>Real Change.</h1>
-      <p class="subheading">
-        Join the monthly community that brings clean water and hope — with full transparency, real updates, and impact you can see.<br>
-        <strong class="highlight">Even $10 can change a life.</strong>
-      </p>
-      <a href="#" class="cta-button">HELP POUR HOPE</a>
-    </div>
+      <div class="hero-content">
+        <h1>
+          Small Donation.<br />
+          <span>Big Impact.</span><br />
+          Real Change.
+        </h1>
+        <p class="subheading">
+          Join the monthly community that brings clean water and hope —
+          with full transparency, real updates, and impact you can see.<br />
+          <strong class="highlight">Even $10 can change a life.</strong>
+        </p>
+        <a href="#" class="cta-button">HELP POUR HOPE</a>
+      </div>
     </div>
   </header>
 
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
 </body>
 </html>
