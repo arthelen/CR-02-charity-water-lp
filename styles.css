@@ -1,306 +1,378 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Nunito Sans", sans-serif;
-    color: #1A1A1A;
-    background-color: #FCF5E3;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .navbar {
-    background-color: #1A1A1A !important;
-    height: 70px;
-    font-family: Georgia, serif;
-    z-index: 10;
-  }
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #1A1A1A;
+  background-color: #FCF5E3;
+}
 
-  .navbar-toggler {
-    background-color: #FFC907 !important;
-    margin-right: 25px;
-    border: none !important;
-  }
+.navbar {
+  background-color: #1A1A1A !important;
+  height: 70px;
+  font-family: Georgia, serif;
+  z-index: 10;
+}
 
-  .navbar ul {
-    padding-right: 20px;
-  }
+.navbar-toggler {
+  background-color: #FFC907 !important;
+  margin-right: 25px;
+  border: none !important;
+}
 
-  .navbar li {
-    padding: 0 10px;
-  }
+.navbar ul {
+  padding-right: 20px;
+}
 
-  .navbar a {
-    color: white;
-    transition: 0.3s ease-in-out;
-    letter-spacing: 4px;
-  }
+.navbar li {
+  padding: 0 10px;
+}
 
-  .navbar a:hover {
-    color: #FFC907;
-    transition: 0.3s ease-in-out;
-  }
+.navbar a {
+  color: white;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 4px;
+}
 
-  .navbar a:active {
-    color: #FFC907 !important;
-  }
+.navbar a:hover {
+  color: #FFC907;
+  transition: 0.3s ease-in-out;
+}
 
-  .navbar a:focus {
-    color: #FFC907 !important;
+.navbar a:active {
+  color: #FFC907 !important;
+}
+
+.navbar a:focus {
+  color: #FFC907 !important;
+}
+
+.navbar img {
+  height: 25px;
+  padding-left: 25px;
+}
+
+.navbar .dropdown-menu {
+  background-color: #1A1A1A;
+}
+
+.navbar .dropdown-toggle:focus {
+  color: #FFC907 !important;
+}
+
+.navbar .dropdown-toggle:hover {
+  color: #FFC907 !important;
+}
+
+.navbar .dropdown-toggle:visited {
+  color: white;
+}
+
+.navbar .dropdown-toggle:active {
+  color: #FFC907 !important;
+}
+
+.navbar .dropdown-menu a {
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar .dropdown-menu a:hover {
+  color: #BAE3F0;
+}
+
+.navbar .dropdown-item {
+  padding: 15px 10px;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #1A1A1A;
+}
+
+.navbar button {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  background-color: #FFC907;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar button:hover {
+  background-color: #FFDE66;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar button a {
+  color: #1A1A1A;
+}
+
+.navbar button a:hover {
+  color: #1A1A1A;
+}
+
+.navbar button a:active {
+  color: #1A1A1A;
+}
+
+.navbar button a:focus {
+  color: #1A1A1A;
+}
+
+.navbar button a:visited {
+  color: #1A1A1A !important;
+}
+
+/* Hero Section */
+.hero {
+  background: url("img/hero-image.jpg") no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 5%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.444); /* soft dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  padding-right: 50px;
+}
+
+/* Headline */
+.hero-content h1 {
+  font-family: "Georgia", serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  color: #BAE3F0; /* light aqua for 'Big Impact' */
+  font-style: italic;
+}
+
+.hero-content .subheading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: white;
+}
+
+.subheading .highlight {
+  color: #BAE3F0;
+  font-weight: bolder;
+}
+
+/* CTA Button */
+.cta-button {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #FFC907; /* Charity: Water Yellow */
+  color: #1A1A1A;
+  font-weight: bolder;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #FFDE66;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* 🔁 Responsive Adjustments */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1A1A1A;
+    padding: 1rem;
   }
 
   .navbar img {
-    height: 30px;
-    padding-left: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .navbar {
+    font-size: 15px !important;
+  }
+  
+  .navbar img {
+    height: 20px;
+    padding-left: 20px;
   }
 
-  .navbar .dropdown-menu {
-    background-color: #1A1A1A;
+  .navbar ul {
+    padding: 0 !important;
+  }
+}
+
+/* 🖥️ Large screens: desktops and widescreens */
+@media (min-width: 900px) {
+  .hero {
+    height: 55vh;
+    padding: 0 10%;
+    justify-content: flex-end;
   }
 
-  .navbar .dropdown-toggle:focus {
-    color: #FFC907 !important;
+  .hero-content {
+    max-width: 600px;
+    text-align: center;
+    margin-right: 2rem;
   }
 
-  .navbar .dropdown-toggle:hover {
-    color: #FFC907 !important;
+  .hero-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.3;
   }
 
-  .navbar .dropdown-toggle:visited {
-    color: white;
+  .hero-content .subheading {
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
 
-  .navbar .dropdown-toggle:active {
-    color: #FFC907 !important;
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
   }
 
-  .navbar .dropdown-menu a {
-    color: white;
+  .navbar ul {
+    gap: 10px;
+    padding-right: 40px;
+  }
+
+  .navbar li {
+    padding: 0 12px;
+  }
+
+  .navbar a {
     font-size: 1rem;
-  }
-
-  .navbar .dropdown-menu a:hover {
-    color: #BAE3F0;
-  }
-
-  .navbar .dropdown-item {
-    padding: 15px 10px;
-  }
-
-  .navbar .dropdown-item:hover {
-    background-color: #1A1A1A;
+    letter-spacing: 3px;
   }
 
   .navbar button {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: bold;
-    background-color: #FFC907;
-    padding: 0 10px;
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
+    font-size: 0.95rem;
   }
+}
 
-  .navbar button:hover {
-    background-color: #FFDE66;
-    transition: 0.2s ease-in-out;
-  }
-
-  .navbar button a {
-    color: #1A1A1A;
-  }
-
-  .navbar button a:hover {
-    color: #1A1A1A;
-  }
-
-  .navbar button a:active {
-    color: #1A1A1A;
-  }
-
-  .navbar button a:focus {
-    color: #1A1A1A;
-  }
-
-  .navbar button a:visited {
-    color: #1A1A1A !important;
-  }
-  
-  /* Hero Section */
+/* Small screens: tablets and large phones */
+@media (max-width: 899px) {
   .hero {
-    background: url("img/hero-image.jpg") no-repeat center center/cover;
-    height: 50vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 0 5%;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.444); /* soft dark overlay */
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 500px;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Headline */
-  .hero-content h1 {
-    font-family: "Georgia", serif;
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content h1 span {
-    color: #BAE3F0; /* light aqua for 'Big Impact' */
-    font-style: italic;
-  }
-  
-  .hero-content .subheading {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.7;
-    color: white;
-  }
-  
-  .subheading .highlight {
-    color: #BAE3F0;
-    font-weight: bolder;
-  }
-  
-  /* CTA Button */
-  .cta-button {
-    font-family: "Nunito Sans", sans-serif;
-    background-color: #FFC907; /* Charity: Water Yellow */
-    color: #1A1A1A;
-    font-weight: bolder;
-    padding: 0.9rem 1.8rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .cta-button:hover {
-    background-color: #FFDE66;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  /* 🔁 Responsive Adjustments */
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .hero {
-    height: 50vh;
+    height: 70vh;
     justify-content: center;
     padding: 0 1.5rem;
-    text-align: right;
+    text-align: center;
     flex-direction: column;
-    background-image: url("img/hero-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
-  
-  /* Small screens: tablets and large phones */
-  @media (max-width: 768px) {
-    .hero {
-      height: 70vh;
-      justify-content: center;
-      padding: 0 1.5rem;
-      text-align: center;
-      flex-direction: column;
-    }
-  
-    .hero-content {
-      margin-top: 2rem;
-    }
-  
-    .hero-content h1 {
-      font-size: 2.2rem;
-      line-height: 1.3;
-    }
-  
-    .hero-content .subheading {
-      font-size: 1rem;
-      line-height: 1.6;
-      padding: 0 10px;
-    }
-  
-    .cta-button {
-      font-size: 0.95rem;
-      padding: 0.8rem 1.4rem;
-    }
-  
-    .navbar img {
-      height: 26px;
-      padding-left: 10px;
-    }
-  
-    .navbar-toggler {
-      margin-right: 10px;
-    }
-  
-    .navbar ul {
-      padding-right: 0;
-    }
+
+  .hero-content {
+    margin-top: 2rem;
   }
-  
-  /* Extra small screens: phones */
-  @media (max-width: 480px) {
-    .hero {
-      height: 70vh;
-      padding: 3rem 1rem 2rem;
-      flex-direction: column;
-      justify-content: flex-start;
-      text-align: center;
-    }
-  
-    .hero-content {
-      max-width: 100%;
-    }
-  
-    .hero-content h1 {
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-  
-    .hero-content .subheading {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      padding: 10px;
-    }
-  
-    .cta-button {
-      font-size: 0.9rem;
-      padding: 0.7rem 1.2rem;
-    }
-  
-    .navbar a {
-      letter-spacing: 2px;
-      font-size: 0.9rem;
-    }
-  
-    .navbar li {
-      padding: 4px 0;
-    }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
   }
+
+  .hero-content .subheading {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .navbar img {
+    height: 26px;
+    padding-left: 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar ul {
+    padding-right: 0;
+  }
+
+  .navbar img {
+    margin-top: 0;
+  }
+
+  .navbar-collapse {
+    background-color: #1A1A1A;
+    padding: 1rem;
+  }
+}
+
+/* Extra small screens: phones */
+@media (max-width: 480px) {
+  .hero {
+    height: 90vh;
+    padding: 3rem 1rem 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .hero-content .subheading {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .navbar a {
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+  }
+
+  .navbar li {
+    padding: 4px 0;
+  }
+
+  .navbar-collapse {
+    background-color: #1A1A1A;
+    padding: 1rem;
+  }
+}
+
