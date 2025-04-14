@@ -143,7 +143,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.444);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -157,6 +157,7 @@ body {
 }
 
 .hero-content h1 {
+  color: #FCF5E3;
   font-family: "Georgia", serif;
   font-size: 3rem;
   font-weight: 700;
@@ -198,6 +199,82 @@ body {
 .cta-button:hover {
   background-color: #FFDE66;
   cursor: pointer;
+}
+
+.story, .cta-section {
+  padding: 3rem 1.5rem;
+  background-color: #FCF5E3;
+  text-align: center;
+}
+
+.story h2, .cta-section h2 {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+.story h2 {
+  color: #1A1A1A;
+}
+
+.story p {
+  margin-bottom: 0 !important;
+}
+
+hr {
+  border: 0;
+  border-radius: 10px;
+  opacity: 100%;
+  height: 3px;
+  background-color: #FFC907;
+  margin: 0 auto;
+  width: 55%;
+}
+
+.cta-section h2 {
+  color: #1A1A1A;
+}
+
+.story p, .cta-section p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footer {
+  background-color: #1A1A1A;
+  color: #ffffff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #FFC907;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #BAE3F0;
 }
 
 /* 🔁 Responsive Hero Adjustments */
@@ -252,6 +329,20 @@ body {
   .cta-button {
     font-size: 0.95rem;
     padding: 0.8rem 1.4rem;
+  }
+
+  .story h2, .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .story p, .cta-section p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
 
@@ -340,7 +431,7 @@ body {
   }
 }
 
-/* Small screens: tablets and large phones */
+
 @media (max-width: 899px) {
   .hero {
     height: 70vh;
@@ -393,7 +484,7 @@ body {
   }
 }
 
-/* Extra small screens: phones */
+
 @media (max-width: 480px) {
   .hero {
     height: 90vh;
